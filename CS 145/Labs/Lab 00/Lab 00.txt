@@ -1,0 +1,55 @@
+# Joshua Nelson
+# 2017-08-24
+# Lab 00 - Sorting Unplugged
+# Approximate time: 30 minutes
+	
+function bubble_sort(card_list) returns card_list:
+	int length = card_list.length();
+	int number_sorted = 0;
+	
+	while (not sorted(card_list)): do
+	# repeats at most length - 1 times
+		for (int iterable) in range(length - number_sorted) do:
+			if (card at card_list[iterable]) > (card at card_list[i + 1]) then:
+				temp = card_list[iterable];
+				card_list[iterable] = card_list[iterable + 1];
+				card_list[iterable + 1] = temp;
+		number_sorted += 1;
+			
+	return card_list;
+	
+function sorted(card_list) returns boolean:
+	int length = card_list.length();
+	for (int i in range(length)): do
+		if (card_list[i] > card_list[i + 1]): do
+			return false;
+			
+	return true;
+	# or the fancy python way:
+	# return all(card_list[i] > card_list[i + 1] for i in range(card_list.length));
+	
+function naive_sort_backwards(card_list) returns card_list:
+	int length = card_list.length();
+	int max = 0;
+	int number_sorted = 0;
+	
+	while(not sorted(card_list)): do
+		for (int i in range(number_sorted): do	
+		# don't repeat cards that have been sorted; effective length lowers by one every iteration
+			last_card = card_list[length - number_sorted;
+			if (card_list[i] > last_card): do
+				temp = card_list[i];
+				card_list[i] = last_card;
+				card_list[length - number_sorted = temp;
+	return card_list;
+	
+	
+/* Lab Report Questions:
+ 
+Does your algorithm work for any number of cards?  If not describe how it can be altered to accommodate this.
+	Yes, it does.
+	
+If we were sorting cards, as before, from the smallest value to the largest value then describe how the cards would have to be ordered that would take the longest time to sort?
+	bubble_sort would take the longest if the cards were previously ordered from largest to smallest.
+	naive_sort_backwards would take the longest if the smallest card were last and the list was otherwise ordered least to greatest.
+*/
