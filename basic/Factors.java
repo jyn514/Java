@@ -1,9 +1,13 @@
-class factors{
+class Factors {
 	public static void main(String[] args) {
 		long n;
 //accepts input or uses sample input
 		if (args.length==1) {
 			n=Long.valueOf(args[0]).longValue();
+            if (n < 0) {
+                System.out.println("Please enter a positive integer.");
+                System.exit(1);
+            }
 		}
 		else {
 			n=144;

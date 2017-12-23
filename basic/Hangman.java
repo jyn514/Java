@@ -1,15 +1,21 @@
-class hangman {
-    public static void main (String[] args) {
-        public static java.util.List<String> pictures = new java.util.ArrayList<String>();
-        PICTURES = [/*
+import java.util.List;
+import java.util.ArrayList;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.io.IOException;
 
+class Hangman {
+    public static List<String> pictures = new ArrayList<>();
+    public static List<String> DICT = makeDict();
+    // String[] PICTURES = [
+/*
  +---+
  |   |
      |
      |
      |
      |
-==========*/, /*
+==========,
 
  +---+
  |   |
@@ -17,7 +23,7 @@ class hangman {
      |
      |
      |
-==========*/, /*
+==========,
 
  +---+
  |   |
@@ -25,7 +31,7 @@ class hangman {
  |   |
      |
      |
-==========*/, /*
+==========,
 
  +---+
  |   |
@@ -33,7 +39,7 @@ class hangman {
 /|   |
      |
      |
-==========*/, /*
+==========,
 
  +---+
  |   |
@@ -41,7 +47,7 @@ class hangman {
 /|\  |
      |
      |
-==========*/, /*
+==========,
 
  +---+
  |   |
@@ -49,7 +55,7 @@ class hangman {
 /|\  |
 /    |
      |
-==========*/, /*
+==========,
 
  +---+
  |   |
@@ -57,11 +63,23 @@ class hangman {
 /|\  |
 / \  |
      |
-==========*/];
-    public static List<String> DICT = List<String> Files.readAllLines(Path /usr/share/dict/american-english-small, StandardCharsets.UTF_8);
-    String randWord = DICT.getLine
-        
-    }
+==========*/
+
     public static void showBoard () {
-    
+
     }
+
+    public static void main(String[] args) {
+        System.out.println("Still in progress. Come back later :)");
+    }
+
+    public static List<String> makeDict() {
+        try {
+            return Files.readAllLines(
+                Paths.get("/usr/share/dict/american-english-small"));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+}
