@@ -3,6 +3,7 @@
 **/.metadata/
 **/out/
 **/.settings/
+**/.idea/
 
 **/*.docx
 **/*.doc
