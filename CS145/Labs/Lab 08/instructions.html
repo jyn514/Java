@@ -1,0 +1,403 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Lab 08</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt'>Lab 08</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt'>Heads or Tails?</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b>Objective:</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Write a program that gives the statistics of a coin flipped
+some number of times!  The user puts in the number of times the coin is
+flipped.  Then use a random number generator that picks only the number 0
+(which represents heads) and 1 (which represents tails) and keep tally on each
+of those.  Give the overall winner at the end or if they tied.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Example Dialog:</b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Welcome to the hails or tails simulator!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Enter a number of flips!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>100</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Heads!</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>The number of heads was 46</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>The number of tails was 54</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;font-family:"Courier New";
+color:#333399'>Tails wins!</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Lab Report Questions:</b></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Write a flow chart for the solution</li>
+ <li class=MsoNormal>What is the difference between a “while” and a “do-while”
+     loop?</li>
+</ol>
+
+<p class=MsoNormal><b>Finally:</b></p>
+
+<p class=MsoNormal>Upload the .java file to the dropbox</p>
+
+</div>
+
+</body>
+
+</html>
